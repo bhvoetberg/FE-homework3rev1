@@ -1,1 +1,54 @@
 /*Maak hier jouw CSS!*/
+
+body {
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 50px 174px 100px auto 50px;
+    grid-gap: 16px;
+    grid-template-areas:
+        "A C C"
+        "B C C"
+        "B E D"
+        "B E ."
+        "F F F";
+
+}
+
+.gridItem {
+    background-color: orange;
+    justify-content: center;
+    align-content: center;
+
+    /*justify-self: center;*/
+    /*align-self: center;*/
+}
+
+.gridA {
+    grid-area: A;
+}
+
+.gridB {
+    grid-area: B;
+}
+
+.gridC {
+    grid-area: C;
+}
+
+.gridD {
+    grid-area: D;
+}
+
+.gridE {
+    grid-area: F;
+}
+
+
+
+
+/*@media screen and (min-width: 1024 ){*/
+/*    grid-te*/
+
+/*}*/
+
