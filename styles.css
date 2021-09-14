@@ -3,52 +3,67 @@
 body {
     background-color: bisque;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 50px 174px 100px auto 50px;
     grid-gap: 16px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 50px auto 50px 50px 50px 50px 50px;
     grid-template-areas:
         "A C C"
         "B C C"
         "B E D"
         "B E ."
         "F F F";
-
 }
 
 .gridItem {
     background-color: orange;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    align-content: center;
-
-    /*justify-self: center;*/
-    /*align-self: center;*/
 }
 
 .gridA {
     grid-area: A;
+    background-color: #540D6E;
+    color: white;
 }
 
 .gridB {
     grid-area: B;
+    background-color: #EE4266;
 }
 
 .gridC {
     grid-area: C;
+    background-color: #FFD23F;
 }
 
 .gridD {
     grid-area: D;
+    background-color: #3BCEAC;
 }
 
 .gridE {
+    grid-area: E;
+    background-color: #0EAD69;
+}
+
+.gridF {
     grid-area: F;
+    background-color: #42F0A5;
+
 }
 
 
-
-
-/*@media screen and (min-width: 1024 ){*/
-/*    grid-te*/
-
-/*}*/
+@media screen and (min-width: 1024px){
+    body {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 50px 174px 100px auto 50px;
+        grid-template-areas:
+            "A C C"
+            "B C C"
+            "B E D"
+            "B E ."
+            "F F F";
+    }
+}
 
